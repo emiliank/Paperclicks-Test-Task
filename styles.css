@@ -216,3 +216,77 @@ footer a {
     text-decoration: none;
     color: black;
 }
+
+
+
+/* Mobile */
+
+@media (max-width: 1024px) {
+    header {
+        padding: 1.5rem 10em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 2em;
+        text-align: center;
+    }
+    
+    header .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+    
+    main h2 {
+        font-size: 2em;
+    }
+    
+    select, .continue-btn, #submit-btn-step-2 {
+        width: 100%;
+    }
+    
+    #step-2 {
+        max-width: 90%;
+    }
+    
+    #step-3 {
+        max-width: 90%;
+    }
+    
+    footer {
+        padding: 50px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+    
+    header .logo img {
+        width: 100px;
+    }
+    
+    main h2 {
+        font-size: 1.8em;
+    }
+    
+    select {
+        padding: 18px;
+    }
+    
+    .continue-btn, #submit-btn-step-2 {
+        font-size: 1rem;
+        padding: 18px;
+    }
+    
+    .checkbox-container {
+        flex-direction: column;
+        font-size: 0.75rem;
+    }
+}
