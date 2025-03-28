@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-next-ios_filled-32.png">
+    <link href="https://fonts.cdnfonts.com/css/tt-firs-neue-trl" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/01d68dfb0d4cc005223d1f333f01c167?family=Basic+Commercial+SR+W04+Black" rel="stylesheet">
+                
+    <link rel="stylesheet" href="styles.css">
+    <title>Internship Application</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="Kinetic Logo.png" alt="Logo"></a>
+        <div class="contact-info"> 
+            <p>Talk to a Consolidation Specialist</p>
+            <p><i class="fas fa-phone-alt"></i>(888) 888-8888</p>
+        </div> 
+    </header>
+    
+    <main id="main-content">
+        <div id="step-1" class="step">
+            <h2>What Is The Best Time To Reach You?</h2>
+            <select id="time-select">
+                <option value="">Choose Your Time</option>
+                <option value="8 AM CST">8 AM CST</option>
+                <option value="9 AM CST">9 AM CST</option>
+                <option value="10 AM CST">10 AM CST</option>
+                <option value="11 AM CST">11 AM CST</option>
+                <option value="12 PM CST">12 PM CST</option>
+                <option value="1 PM CST">1 PM CST</option>
+                <option value="2 PM CST">2 PM CST</option>
+                <option value="3 PM CST">3 PM CST</option>
+                <option value="4 PM CST">4 PM CST</option>
+                <option value="5 PM CST">5 PM CST</option>
+            </select>
+            <p>(All times are in CST)</p>
+
+            <button id="continue-btn" class="continue-btn" disabled>Continue ></button>
+        </div>
+        <section id="step-2">
+            <h2>Add Your Personal Details</h2>
+            <form id="personal-details-form">
+                <input type="text" id="first-name" placeholder="First name" required>
+                <input type="text" id="last-name" placeholder="Last name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone-number" placeholder="Phone Number" required>
+        
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent">
+                    <label for="consent">
+                        By clicking the button above, you acknowledge, consent, and agree to the following: a) Our Privacy Policy 
+                        and consent to receive notices and other communications electronically. b) We take your privacy 
+                        seriously. You are providing express written consent for us to share your information with up to four (4) parties 
+                        and for authorized third parties to contact you (including through automated means; e.g., autodialing, text, 
+                        and pre-recorded messaging) about legal services or related offers via telephone, mobile device (including 
+                        SMS and MMS), and/or email, even if your telephone number is on any Do Not Call list. c) Consent is not 
+                        required to purchase goods or services. You may choose to speak with an individual service provider by dialing 
+                        (888) 888-8888.
+                    </label>
+                </div>
+        
+                <button id="submit-btn-step-2" class="continue-btn" disabled>SUBMIT YOUR DETAILS</button>
+            </form>
+        </section>
+        
+        <div id="step-3" class="step" style="display: none;">
+            <h2>Summary of Your Information</h2>
+            <p id="selected-time"></p>
+            <p id="user-name"></p>
+            <p id="user-email"></p>
+            <p id="user-phone"></p>
+        </div>
+    </main>
+    <div class="privacy">
+        <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">California Privacy</a></p>
+
+    </div>
+    <footer>
+       
+        <p>This site is not a part of the Facebook website or Facebook Inc. Additionally, Facebook does NOT endorse this site. FACEBOOK is a trademark of FACEBOOK, Inc. This site is not a part of the YouTube website or Google, LLC. Additionally, This site is NOT endorsed by Google in any way.</p>
+        <p>While we may provide you preliminary information on whether you qualify for compensation, your local governing body ultimately determines who qualifies and what claims are paid. This site is provided for informational purposes only. If you have questions about whether you qualify, please contact an attorney.</p>
+        <p>THIS IS A PAID ATTORNEY / ADVOCATE ADVERTISEMENT.</p>
+        <p>*While we may provide you preliminary information on whether you may qualify for compensation, the U.S. District Court: Eastern District of North Carolina ultimately determines who qualifies and what claims are paid. This site is provided for informational purposes only. If you have questions about whether you qualify, please contact an attorney.</p>
+        <p>This website uses Google Analytics and Google Ads to track your journey for marketing purposes. If you wish to opt-out of user-tracking <a href="#">click here</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
